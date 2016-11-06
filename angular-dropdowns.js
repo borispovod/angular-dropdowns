@@ -26,7 +26,7 @@
       ' ng-if="!dropdownSelectItemImage.divider"',
       ' ng-href="{{dropdownSelectItemImage.href}}"',
       ' ng-click="selectItem()">',
-      '<img class="item-image" ng-if="dropdownSelectItemImage.image" ng-src="{{dropdownSelectItemImage}}"><span class="item">{{dropdownSelectItemImage[dropdownItemLabel]}}</span>',
+      '<img class="item-image" ng-if="dropdownSelectItemImage.image" ng-src="{{dropdownSelectItemImage.image}}"><span class="item">{{dropdownSelectItemImage[dropdownItemLabel]}}</span>',
       '</a>',
       '<span ng-if="dropdownSelectItemImage.divider">',
       '{{dropdownSelectItemImage[dropdownItemLabel]}}',

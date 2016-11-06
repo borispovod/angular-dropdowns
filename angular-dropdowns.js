@@ -9,7 +9,7 @@
   dd.run(['$templateCache', function ($templateCache) {
     $templateCache.put('ngDropdowns/templates/dropdownSelectImage.html', [
       '<div ng-class="{\'disabled\': dropdownDisabled}" class="wrap-dd-select" tabindex="0">',
-      '<img class="selected-img" ng-if="dropdownModel && dropdownModel.image"><span class="selected">{{dropdownModel[labelField]}}</span>',
+      '<img class="selected-img" ng-if="dropdownModel && dropdownModel.image" ng-src="dropdownModel.image"><span class="selected">{{dropdownModel[labelField]}}</span>',
       '<ul class="dropdown">',
       '<li ng-repeat="item in dropdownSelect"',
       ' class="dropdown-item"',

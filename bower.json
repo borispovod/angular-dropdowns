@@ -1,5 +1,5 @@
 {
-  "name": "angular-dropdowns",
+  "name": "angular-dropdowns-image",
   "version": "1.5.1",
   "homepage": "https://github.com/jseppi/angular-dropdowns",
   "authors": [
@@ -16,7 +16,7 @@
     "Chinokao",
     "pistolete"
   ],
-  "description": "AngularJS Dropdown Directives",
+  "description": "AngularJS Dropdown Directives (with image)",
   "main": [
     "dist/angular-dropdowns.min.js",
     "dist/angular-dropdowns.min.css"

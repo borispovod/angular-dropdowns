@@ -35,7 +35,7 @@
     ].join(''));
   }]);
 
-  dd.directive('dropdownSelectImage', ['DropdownService',
+  dd.directive('dropdownSelectImage', ['DropdownServiceImage',
     function (DropdownService) {
       return {
         restrict: 'A',
@@ -104,7 +104,7 @@
   ]);
 
 
-  dd.factory('DropdownService', ['$document',
+  dd.factory('DropdownServiceImage', ['$document',
     function ($document) {
       var body = $document.find('body'),
         service = {},

@@ -11,7 +11,7 @@
       '<div ng-class="{\'disabled\': dropdownDisabled}" class="wrap-dd-select" tabindex="0">',
       '<img class="selected-img" ng-if="dropdownModel && dropdownModel.image" ng-src="{{dropdownModel.image}}"><span class="selected">{{dropdownModel[labelField]}}</span>',
       '<ul class="dropdown">',
-      '<li ng-repeat="item in dropdownSelect"',
+      '<li ng-repeat="item in dropdownSelectImage"',
       ' class="dropdown-item"',
       ' dropdown-select-item-image="item"',
       ' dropdown-item-label="labelField">',

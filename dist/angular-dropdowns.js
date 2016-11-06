@@ -41,7 +41,7 @@
         restrict: 'A',
         replace: true,
         scope: {
-          dropdownSelect: '=',
+          dropdownSelectImage: '=',
           dropdownModel: '=',
           dropdownItemLabel: '@',
           dropdownOnchange: '&',

@@ -6,24 +6,9 @@ app.controller('AppCtrl', function($scope) {
   $scope.ddSelectOptions = [
     {
       text: 'Label',
-      divider: true
-    }, {
-      text: 'Option1',
-      value: 'one',
-      iconCls: 'someicon'
-    }, {
-      text: 'Option2',
-      someprop: 'somevalue'
-    }, {
-      divider: true
-    }, {
-      text: 'Option4',
-      href: 'http://www.google.com'
+		value: '123',
+		image: '123'
     }
   ];
-
-  $scope.ddSelectSelected = {
-    text: "Select an Option"
-  };
 
 });

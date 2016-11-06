@@ -23,13 +23,13 @@
     $templateCache.put('ngDropdowns/templates/dropdownSelectItemImage.html', [
       '<li ng-class="{divider: (dropdownSelectItem.divider && !dropdownSelectItem[dropdownItemLabel]), \'divider-label\': (dropdownSelectItem.divider && dropdownSelectItem[dropdownItemLabel])}">',
       '<a href="" class="dropdown-item"',
-      ' ng-if="!dropdownSelectItem.divider"',
-      ' ng-href="{{dropdownSelectItem.href}}"',
+      ' ng-if="!dropdownSelectItemImage.divider"',
+      ' ng-href="{{dropdownSelectItemImage.href}}"',
       ' ng-click="selectItem()">',
-      '<img class="item-image" ng-if="dropdownSelectItem.image" ng-src="{{dropdownSelectItem.image}}"><span class="item">{{dropdownSelectItem[dropdownItemLabel]}}</span>',
+      '<span class="item">{{dropdownSelectItemImage[dropdownItemLabel]}}</span>',
       '</a>',
-      '<span ng-if="dropdownSelectItem.divider">',
-      '{{dropdownSelectItem[dropdownItemLabel]}}',
+      '<span ng-if="dropdownSelectItemImage.divider">',
+      '{{dropdownSelectItemImage[dropdownItemLabel]}}',
       '</span>',
       '</li>'
     ].join(''));
@@ -86,15 +86,16 @@
         replace: true,
         scope: {
           dropdownItemLabel: '=',
-          dropdownSelectItem: '='
+          dropdownSelectItemImage: '='
         },
 
         link: function (scope, element, attrs, dropdownSelectCtrl) {
           scope.selectItem = function () {
-            if (scope.dropdownSelectItem.href) {
+				console.log(scope.dropdownSelectItemImage);
+            if (scope.dropdownSelectItemImage.href) {
               return;
             }
-            dropdownSelectCtrl.select(scope.dropdownSelectItem);
+            dropdownSelectCtrl.select(scope.dropdownSelectItemImage);
           };
         },
 

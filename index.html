@@ -21,30 +21,9 @@
         <h1>Dropdown Select</h1>
 
         <p>You have selected: {{ddSelectSelected}}</p>
-        <div dropdown-select="ddSelectOptions" dropdown-model="ddSelectSelected" dropdown-disabled="dropdownsDisabled"></div>
+        <div dropdown-select-image="ddSelectOptions" dropdown-model="ddSelectSelected" dropdown-disabled="dropdownsDisabled"></div>
 
         <hr>
-
-        <h1>Dropdown Menu</h1>
-
-        <h2>On a Button</h2>
-        <p>You have selected: {{ddMenuSelected}}</p>
-        <button dropdown-menu="ddMenuOptions" dropdown-model="ddMenuSelected" dropdown-disabled="dropdownsDisabled" class="btn-menu">
-          Menu
-        </button>
-
-        <h2>On a Div</h2>
-        <p>And using a custom label field</p>
-        <p>You have selected: {{ddMenuSelected2}}</p>
-        <div style="cursor:pointer; width:100px; margin:0 auto;" dropdown-menu="ddMenuOptions2" dropdown-model="ddMenuSelected2" dropdown-disabled="dropdownsDisabled" dropdown-item-label="name">
-          Menu
-        </div>
-
-        <h2>On an Anchor</h2>
-        <p>You have selected: {{ddMenuSelected3}}</p>
-        <a href='' style="width:100px; margin:0 auto;" dropdown-menu="ddMenuOptions3" dropdown-model="ddMenuSelected3" dropdown-disabled="dropdownsDisabled">
-          Menu
-        </a>
 
       </div>
     </div>

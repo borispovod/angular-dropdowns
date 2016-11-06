@@ -13,7 +13,7 @@
       '<ul class="dropdown">',
       '<li ng-repeat="item in dropdownSelect"',
       ' class="dropdown-item"',
-      ' dropdown-select-item="item"',
+      ' dropdown-select-item-image="item"',
       ' dropdown-item-label="labelField">',
       '</li>',
       '</ul>',
@@ -35,7 +35,7 @@
     ].join(''));
   }]);
 
-  dd.directive('dropdownSelect', ['DropdownService',
+  dd.directive('dropdownSelectImage', ['DropdownService',
     function (DropdownService) {
       return {
         restrict: 'A',
@@ -79,7 +79,7 @@
     }
   ]);
 
-  dd.directive('dropdownSelectItem', [
+  dd.directive('dropdownSelectItemImage', [
     function () {
       return {
         require: '^dropdownSelect',

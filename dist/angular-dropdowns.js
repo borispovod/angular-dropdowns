@@ -82,7 +82,7 @@
   dd.directive('dropdownSelectItemImage', [
     function () {
       return {
-        require: '^dropdownSelect',
+        require: '^dropdownSelectImage',
         replace: true,
         scope: {
           dropdownItemLabel: '=',

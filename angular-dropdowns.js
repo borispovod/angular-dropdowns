@@ -4,7 +4,7 @@
 (function (window, angular) {
   'use strict';
 
-  var dd = angular.module('ngDropdowns', []);
+  var dd = angular.module('ngDropdownsImage', []);
 
   dd.run(['$templateCache', function ($templateCache) {
     $templateCache.put('ngDropdowns/templates/dropdownSelectImage.html', [
